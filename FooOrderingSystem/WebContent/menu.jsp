@@ -182,6 +182,7 @@
     		<input type="hidden" name="itemName" value="<%= name %>">
     		<input type="hidden" name="itemPrice" value="<%= price %>">
     		<input type="hidden" name="itemImage" value="<%= url %>">
+    		<input type="hidden" name="query" value="<%= query != null ? query: ""%>">
     		<button type="submit">Add to Cart</button>
 			</form>
         </div>

@@ -31,9 +31,11 @@
     Integer userId = (Integer) session.getAttribute("id"); 
     List<String> cartItems = (List<String>) session.getAttribute("cartItems");
     List<String> cartPrices = (List<String>) session.getAttribute("cartPrices");
+    List<String> cartImages= (List<String>) session.getAttribute("cartImages");
+    List<Integer> cartQuantities= (List<Integer>) session.getAttribute("cartQuantities");
     
 
-    if (userId == null || cartItems == null || cartPrices == null) {
+    if (userId == null || cartItems == null || cartPrices == null || cartQuantities==null || cartImages==null) {
         out.println("Session attributes are not set. Please add items to your cart and try again.");
         return; 
     }
